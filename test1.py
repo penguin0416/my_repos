@@ -1,6 +1,14 @@
 #저녁정하기
+import csv
 
 today_dinner = ["볶음밥", "국/찌개", "메인반찬"]
+
+with open('listfile.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow(today_dinner)
+
+with open('listfile.csv', 'r', encoding='utf-8') as f:
+    rdr = csv.reader(f)
 
 print(today_dinner)
 
