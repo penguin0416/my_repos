@@ -10,6 +10,7 @@ with open('listfile.csv', 'w', newline='') as f:
 with open('listfile.csv', 'r', encoding='utf-8') as f:
     rdr = csv.reader(f)
 
+
 print(today_dinner)
 
 while(11):
