@@ -1,6 +1,18 @@
 #저녁정하기
 import csv
 
+def func():
+    #파일 열기
+    f = open('C:\SeonHoPark\Python\example_txt', 'w')
+
+    #파일 쓰기
+    f.write(input())
+
+    #파일 닫기
+    f.close()
+
+    return 0
+
 today_dinner = ["볶음밥", "국/찌개", "메인반찬"]
 
 with open('listfile.csv', 'w', newline='') as f:
